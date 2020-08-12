@@ -31,9 +31,9 @@ class LinkedList:
         self.head = None
         self.tail = None
         if values:
-            self.add_multiples(values)
+            self.add_multiple(values)
 
-    def add_multiples(self, values):
+    def add_multiple(self, values):
         """
         Add multiple values in the linkedList
         :parameter values--> values that will be inserted into the linkedlist
@@ -55,6 +55,7 @@ class LinkedList:
             self.tail.next = node
             # Save this node as tail
             self.tail = node
+        return node
 
     def generate(self, n, minValue, maxValue):
         """
